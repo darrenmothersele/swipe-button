@@ -11,7 +11,7 @@ import interact from 'interactjs';
             <ng-content></ng-content>
         </div>
         <div #handle class="drag-handle shadow w-16 h-16 bg-white rounded-full absolute top-0 -mt-2 flex items-center justify-center" 
-             [class.dragging]="isDragging"
+             [class.dragging]="isDragging" style="touch-action: none;"
              [style.transform]="'translateX(' + pos + 'px)'">
             <svg class="w-5 h-5 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.172 9l-6.071-6.071 1.414-1.414L20 10l-.707.707-7.778 7.778-1.414-1.414L16.172 11H0V9z"/></svg>
         </div>
